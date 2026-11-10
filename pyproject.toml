@@ -1,0 +1,26 @@
+[project]
+name = "alphaidea-shield"
+version = "0.1.0"
+description = "A lightweight encryption and decryption library for Python."
+readme = "README.md"
+authors = [
+    { name = "Vincent" }
+]
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+    "cryptography>=44",
+]
+
+[project.urls]
+Homepage = "https://github.com/alphaidea/shield-python"
+Repository = "https://github.com/alphaidea/shield-python"
+Issues = "https://github.com/alphaidea/shield-python/issues"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "shield"
